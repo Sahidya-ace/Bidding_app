@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auction App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the Auction App</h1>
+
+    <div class="add-product">
+        <h2>Add New Product</h2>
+        <input type="text" id="productName" placeholder="Enter Product Name">
+        <input type="number" id="productPrice" placeholder="Enter Product Price">
+        <input type="text" id="productImage" placeholder="Enter Image URL">
+        <button onclick="addProduct()">Add Product</button>
+        <button onclick="saveData()">Save</button>
+        <button onclick="resetData()">Reset</button>
+    </div>
+
+    <h2>Trending Products</h2>
+    <div id="productList"></div>
+
+    <h2>Top Bidders</h2>
+    <div id="topBidders"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
